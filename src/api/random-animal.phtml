@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Random animal</title>
+</head>
+<body>
+   
+<?php
+$getDog = file_get_contents('https://dog.ceo/api/breeds/image/random');
+$dog = json_decode($getDog, true);
+
+$getCat = file_get_contents('https://api.thecatapi.com/v1/images/search?limit=10');
+$cat = json_decode($getCat, true);
+
+$animals = [$dog, $cat];
+$randomAnimal = $animals[array_rand($animals)];
+?>
+
+<img src="<?= $randomAnimal['message']?>" alt='randomAnimal'>";
+
+</body>
+</html>

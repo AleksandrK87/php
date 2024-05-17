@@ -7,7 +7,7 @@ if(isset($_SESSION['username']) && isset($_SESSION['email'])) {
    $email = $_SESSION['email'];
 } else {
     // Перенаправляем пользователя на страницу регистрации, если переменные сессии не установлены
-   header("Location: register.php");
+   header("Location: /php/session/register.php");
    exit();
 }
 ?>

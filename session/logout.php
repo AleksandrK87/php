@@ -8,6 +8,6 @@ session_unset();
 session_destroy();
 
 // Перенаправляем пользователя на страницу регистрации
-header("Location: register.php");
+header("Location: /php/session/register.php");
 exit();
 

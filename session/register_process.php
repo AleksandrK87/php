@@ -10,6 +10,6 @@ $_SESSION['username'] = $username;
 $_SESSION['email'] = $email;
 
 // Перенаправляем пользователя на страницу приветствия
-header("Location: welcome.php");
+header("Location: /php/session/welcome.php");
 exit();
 

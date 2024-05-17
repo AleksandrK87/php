@@ -1,7 +1,6 @@
 {
   "minimum-stability": "dev",
   "autoload": {
-    "files": ["src/exeption/inverse.php"],
     "psr-4": {
       "PHP\\": "src/"
     }

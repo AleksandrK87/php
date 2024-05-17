@@ -46,10 +46,10 @@ class Warehouse {
         $this->burnAllProducts();
     }
 
-   public function getReport() {
-      $report = "Отчет по складу в {$this->location}:\n";
+    public function getReport() {
+      $report = "Отчет по складу в {$this->location}:\n <br>";
       foreach ($this->products as $product) {
-         $report .= "Товар: " . $product->getName() . ", Количество: " . $product->getQuantity() . ", Вес: " . $product->getWeight() . " кг\n";
+         $report .= "Товар: " . $product->getName() . ", <br> Количество: " . $product->getQuantity() . ", <br> Вес: " . $product->getWeight() . " кг\n <br>";
       }
       return $report;
    }
